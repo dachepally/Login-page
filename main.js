@@ -18,8 +18,18 @@ const updateWithAdd = async (event) => {
    // const s = parseInt(document.querySelector('#guest').value);
     const city1 = document.querySelector('#firstNumber').value;
     const city2 = document.querySelector('#secondNumber').value;
-    const ans = ` Number of characters in smalles string is ${Math.min(city1.length, city2.length)}.`
-    document.querySelector('#result').innerHTML = ans
+    var n;
+    if(city1.localeCompare(city2) == 0)
+    {
+      n = ` Login Successful.`
+    }
+    else
+    {
+
+      n = ` Login Successful.`
+    }
+    //const ans = ` Number of characters in smalles string is ${Math.min(city1.length, city2.length)}.`
+    document.querySelector('#result').innerHTML = n
  // }
 }
 
